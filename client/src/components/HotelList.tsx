@@ -50,8 +50,8 @@ export function HotelList({
                 </td>
                 <td>{hotel.location}</td>
                 <td>{hotel.availableRooms}</td>
-                <td>${hotel.pricePerNight.toFixed(2)}</td>
-                <td>{hotel.rating.toFixed(1)}</td>
+                <td>${hotel.pricePerNight}</td>
+                <td>{hotel.rating}</td>
                 <td className="description">{hotel.description ?? "—"}</td>
                 <td className="actions-col">
                   <button className="ghost" onClick={() => onEdit(hotel)}>
